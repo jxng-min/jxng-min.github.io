@@ -4,7 +4,7 @@ bio:                Unity, Cocos, Enjoy😀
 description:        "Unity, Cocos, Enjoy😀"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://github.com/jxng-min/jxng-min.github.io" # the base hostname & protocol for your site
+url: "https://jxng-min.github.io" # the base hostname & protocol for your site
 
 # Comments
 disqus_shortname:   default
@@ -23,11 +23,6 @@ keywords:
   - Math
   - ETC
 google_drive:       https://drive.google.com/drive/folders/1CVe9uwdHy753r3-Qf44ukC28ncSGqyYv?hl=ko
-
-# personal
-location:           서울특별시 동작구 상도3동
-phone:              010-7596-0596
-email:              vwmartin@naver.com
 
 # Other
 background_image:   /images/bg.jpg
