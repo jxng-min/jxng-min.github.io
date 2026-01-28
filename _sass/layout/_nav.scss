@@ -19,7 +19,7 @@
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
-		padding: 0 2rem 0 0;
+		padding: 0 1rem 0 0;
 		position: relative;
 		width: calc(100% - #{_size(padding) * 2});
 		max-width: _size(wrapper);
@@ -75,8 +75,42 @@
 			&.icons {
 				@include vendor('flex-grow', '0');
 				@include vendor('flex-shrink', '0');
-				margin-bottom: 0;
+				margin-left: 10px;
 			}
+		}
+
+		.nav-search {
+			align-self: center;
+			margin: 0 0.5rem;
+
+			input {
+				border-radius: 999px;
+				border: solid 1px rgba(255,255,255,0.9);
+				background: rgba(255,255,255,0.15);
+				color: _palette(invert, fg);
+				font-size: 0.8rem;
+				padding: 0.4rem 0.9rem;
+				width: 13rem;
+				transition: border-color #{_duration(transition)} ease-in-out, background 0.25s ease-in-out;
+
+				&:focus {
+					background: rgba(255,255,255,0.95);
+					border-color: _palette(accent);
+					outline: none;
+					color: #111;
+				}
+			}
+		}
+
+		.visually-hidden {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0,0,0,0);
+			border: 0;
 		}
 
 		@include breakpoint(medium) {

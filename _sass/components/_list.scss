@@ -63,6 +63,24 @@
 						text-align: center;
 						border-radius: 100%;
 						font-size: 1.25rem;
+						content: '';
+						border: solid 2px currentColor;
+						box-sizing: border-box;
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: 60%;
+					}
+					
+					&.icon-github:before {
+						background-image: url("/assets/images/icons/github.svg");
+					}
+
+					&.icon-google-drive:before {
+						background-image: url("/assets/images/icons/google-drive.svg");
+					}
+
+					&.icon-instagram:before {
+						background-image: url("/assets/images/icons/instagram.svg");
 					}
 				}
 			}

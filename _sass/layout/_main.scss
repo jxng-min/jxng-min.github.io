@@ -31,6 +31,12 @@
 		> .post {
 			@include padding((_size(padding) * 4), (_size(padding) * 4));
 
+			header.major {
+				h1 {
+					font-size: 2rem;
+				}
+			}
+
 			header {
 				&.major {
 					> .date {
@@ -38,7 +44,7 @@
 					}
 
 					> h1, h2 {
-						font-size: 4rem;
+						font-size: 3rem;
 						line-height: 1.1;
 						margin: 0 0 _size(element-margin) 0;
 					}
@@ -63,10 +69,55 @@
 							margin-bottom: _size(element-margin);
 						}
 
+						> h1 {
+							font-size: 1.8rem;
+						}
 						> h1, h2 {
-							font-size: 2.5rem;
+							font-size: 2.1rem;
 							line-height: 1.2;
 							margin: 0 0 (_size(element-margin) * 0.75) 0;
+						}
+					}
+				}
+			}
+		}
+
+		> .post-filter {
+			position: relative;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 2rem 4rem 1rem 4rem;
+
+			> .filters-wrapper {
+				position: relative;
+				padding-top: 0;
+				margin-top: -0.6rem;
+
+				> .filters {
+					list-style: none;
+					padding: 0;
+					margin: 0;
+					display: inline-flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 0.45rem;
+
+					li {
+						cursor: pointer;
+						padding: 0.35rem 0.95rem;
+						border-radius: 999px;
+						border: solid 1.5px transparent;
+						font-size: 0.75rem;
+						letter-spacing: 0.25em;
+						text-transform: uppercase;
+						font-weight: _font(weight-heading);
+						color: _palette(fg-bold);
+
+						&.active {
+							border-color: _palette(accent);
+							color: _palette(accent);
 						}
 					}
 				}
@@ -85,11 +136,19 @@
 			padding: 0;
 
 			> article {
-				border-color: _palette(border);
-				border-left-width: 2px;
-				border-style: solid;
-				border-top-width: 2px;
+				border: none;
 				text-align: center;
+
+				header {
+					h2 {
+						font-size: 2rem;
+					}
+				}
+
+				p {
+					font-size: 0.75rem;
+					margin: (_size(element-margin) * 0.35) 0 (_size(element-margin) * 0.5) 0;
+				}
 
 				> :last-child {
 					margin-bottom: 0;
@@ -101,6 +160,37 @@
 
 				&:nth-child(-n + 2) {
 					border-top-width: 0;
+				}
+			}
+
+			> article.hidden {
+				display: none;
+			}
+
+			> .empty-state {
+				text-align: center;
+				padding: (_size(padding) * 2);
+				font-size: 1.1rem;
+				font-style: normal;
+				color: _palette(fg-bold);
+				max-width: 40rem;
+				margin: 0 auto;
+				@include breakpoint(small) {
+					font-size: 1rem;
+				}
+			}
+
+			> .empty-state.hidden {
+				display: none;
+			}
+
+			&.filtered-empty {
+				min-height: 18rem;
+				align-items: center;
+				justify-content: center;
+
+				> .empty-state {
+					margin-top: 0;
 				}
 			}
 
@@ -141,6 +231,12 @@
 						max-width: 25rem;
 						margin-left: auto;
 						margin-right: auto;
+					}
+                    
+					header {
+						h2 {
+							font-size: 1.75rem;
+						}
 					}
 				}
 			}

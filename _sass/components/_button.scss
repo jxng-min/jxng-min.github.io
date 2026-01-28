@@ -60,6 +60,16 @@
 					margin-right: 0;
 					text-align: center;
 					text-indent: 0;
+					content: '';
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 45%;
+				}
+
+				&.icon-arrow {
+					&:before {
+						background-image: url("/assets/images/icons/arrow-down.svg");
+					}
 				}
 			}
 		}

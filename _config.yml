@@ -1,10 +1,10 @@
 # Site
-title:              Massively
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
+title:              김종민의 기술 블로그
+bio:                Unity, Cocos, Enjoy😀
+description:        "Unity, Cocos, Enjoy😀"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://github.com/jxng-min/jxng-min.github.io" # the base hostname & protocol for your site
 
 # Comments
 disqus_shortname:   default
@@ -13,13 +13,21 @@ disqus_shortname:   default
 analytics-id:       "default"
 twitter:            default
 facebook:           default
-instagram:          default
-github:             default
+instagram:          https://www.instagram.com/jxng.min/
+github:             jxng-min
+keywords:
+  - Unity
+  - Cocos
+  - Troubleshooting
+  - Algorithm
+  - Math
+  - ETC
+google_drive:       https://drive.google.com/drive/folders/1CVe9uwdHy753r3-Qf44ukC28ncSGqyYv?hl=ko
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+location:           서울특별시 동작구 상도3동
+phone:              010-7596-0596
+email:              vwmartin@naver.com
 
 # Other
 background_image:   /images/bg.jpg
