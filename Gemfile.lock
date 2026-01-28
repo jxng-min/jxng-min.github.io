@@ -274,11 +274,10 @@ GEM
     webrick (1.9.2)
 
 PLATFORMS
-  ruby
   x64-mingw-ucrt
 
 DEPENDENCIES
-  github-pages (= 232)
+  github-pages
 
 CHECKSUMS
   activesupport (8.1.2) sha256=88842578ccd0d40f658289b0e8c842acfe9af751afee2e0744a7873f50b6fdae
