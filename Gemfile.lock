@@ -274,6 +274,7 @@ GEM
     webrick (1.9.2)
 
 PLATFORMS
+  ruby
   x64-mingw-ucrt
 
 DEPENDENCIES
