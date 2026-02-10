@@ -1,0 +1,38 @@
+#  The contact options.
+
+- type: github
+  icon: "fab fa-github"
+
+- type: drive
+  icon: "fa-brands fa-google-drive"
+  url: "https://drive.google.com/drive/folders/1CVe9uwdHy753r3-Qf44ukC28ncSGqyYv" # replace with your shared folder/page URL
+
+- type: notion
+  icon: "fa-brands fa-notion"
+  url: "https://jxngmin-resume.notion.site/Jongmin-Kim-15d7c5e83f2580749b41ee6a6d1b41cc?pvs=74" # replace with your Notion workspace/page URL
+  noblank: true # open link in current tab
+# Uncomment and complete the url below to enable more contact options
+#
+# - type: mastodon
+#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
+#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
+#
+# - type: linkedin
+#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+#   url:  ''                  # Fill with your Linkedin homepage
+#
+# - type: stack-overflow
+#   icon: 'fab fa-stack-overflow'
+#   url:  ''                  # Fill with your stackoverflow homepage
+#
+# - type: bluesky
+#   icon: 'fa-brands fa-bluesky'
+#   url: ''                   # Fill with your Bluesky profile link
+#
+# - type: reddit
+#   icon: 'fa-brands fa-reddit'
+#   url: ''                   # Fill with your Reddit profile link
+#
+# - type: threads
+#   icon: 'fa-brands fa-threads'
+#   url: ''                   # Fill with your Threads profile link
